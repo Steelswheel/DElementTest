@@ -1,35 +1,42 @@
+$page-width: 1366px
+$page-height: 3871px
+
 .page
   padding: 0
   margin: 0 auto
   box-sizing: border-box
-  min-width: 100vw
-  min-height: 100vh
+  height: $page-height
 
 .header
+  background: linear-gradient(0deg, #98C3E8 1%, rgba(152, 195, 232, 0) 20.12%)
+  min-height: 20%
 
 .page__header
   position: relative
   top: 0
 
 .logo
+  width: 48px
+  height: 48px
 
 .header__logo
   position: absolute
-  left: 0%
+  left: 8%
   right: 0%
-  top: 16.67%
-  bottom: 16.67%
+  top: 6%
 
 .nav
-  position: absolute
-  right: 0
-  top: 5px
-  max-width: 55px
+  max-width: 48px
   background-color: white
   color: white
   text-align: center
-  min-height: 40px
+  min-height: 48px
   font-family: 'Arial'
+
+.header__nav
+  position: absolute
+  right: 8%
+  top: 6%
 
 #check-menu
   display: none
@@ -51,7 +58,7 @@
   right: 10px
   width: 35px
   height: 2px
-  background-color: blue
+  background-color: #356EAD
   transition: .5s all
 
 .second, .third
@@ -73,13 +80,7 @@
   transition: .5s all
 
 .link
-  display: block
-  width: 100%
-  padding: 10px
-  color: black
   text-decoration: none
-  border-top: 1px solid rgba(255,255,255,.3)
-  background-color: white
 
 .link:hover
   background-color: rgba(100,100,200,.9)
@@ -100,38 +101,86 @@
 #check-menu:checked ~ .fourth
   display: none
 
-
-.page__project
-  position: relative
-  min-height: 30vh
+.header__image
+  position: absolute
+  top: 12%
+  right: 8%
+  height: 85%
 
 .text-card
 
-.project__text-card
-  max-width: 15%
+.header__text-card
+  max-width: 45%
   position: absolute
-  top: 2%
+  top: 20%
   left: 20%
 
 .text-card__header
 
-.project__text-card__header
+.text-card__header_blue
+  color: #1F3F68
+  font-family: Galien
+  font-size: 64px
+  line-height: 74px
+  letter-spacing: 0.04em
 
 .text-card__text
+  font-family: Gilroy
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.05em
+  width: 55%
+  margin-bottom: 12%
+
+.text-card__text_blue
+  color: #1F3F68
+  opacity: 0.6
 
 .button
-
-.project__image
-  position: absolute
-  top: 2%
-  right: 30%
+  width: 220px
+  height: 56px
+  background: #5A98D0
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+  border-radius: 10px
+  font-family: Gilroy
+  font-size: 16px
+  line-height: 26px
+  text-align: center
+  letter-spacing: 0.04em
+  color: #FFFFFF
 
 .help
 
 .page__help
   position: relative
-  min-width: 20%
+  height: 30%
 
 .help__text
   position: absolute
-  top: 5%
+  top: 20%
+  left: 12%
+  font-family: Gilroy
+  font-size: 36px
+  line-height: 46px
+  letter-spacing: 0.05em
+  color: #316099
+
+.help-card
+  width: 20%
+  text-align: center
+  border: 1px solid black
+  background: #FFFFFF
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+  border-radius: 10px
+
+.help-card_first
+  position: absolute
+  top: 60%
+  left: 20%
+
+.help-card_second
+  position: absolute
+  top: 30%
+  right: 20%
+
+.help-card__logo
