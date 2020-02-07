@@ -31,7 +31,6 @@ $page-height: 3871px
   color: white
   text-align: center
   min-height: 48px
-  font-family: 'Arial'
 
 .header__nav
   position: absolute
@@ -82,9 +81,6 @@ $page-height: 3871px
 .link
   text-decoration: none
 
-.link:hover
-  background-color: rgba(100,100,200,.9)
-
 #check-menu:checked ~ .nav__main-menu
   max-height: 500px
   font-size: 16px
@@ -105,7 +101,11 @@ $page-height: 3871px
   position: absolute
   top: 12%
   right: 8%
-  height: 85%
+  height: 100%
+  width: 40%
+  background-repeat: no-repeat
+  background-size: contain
+  background-image: url('../img/header-image.svg')
 
 .text-card
 
@@ -119,13 +119,13 @@ $page-height: 3871px
 
 .text-card__header_blue
   color: #1F3F68
-  font-family: Galien
+  font-family: Galien, serif
   font-size: 64px
   line-height: 74px
   letter-spacing: 0.04em
 
 .text-card__text
-  font-family: Gilroy
+  font-family: Gilroy, serif
   font-size: 16px
   line-height: 26px
   letter-spacing: 0.05em
@@ -142,7 +142,7 @@ $page-height: 3871px
   background: #5A98D0
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
   border-radius: 10px
-  font-family: Gilroy
+  font-family: Gilroy, serif
   font-size: 16px
   line-height: 26px
   text-align: center
@@ -152,35 +152,73 @@ $page-height: 3871px
 .help
 
 .page__help
+  margin-top: 5%
+  margin-bottom: 3%
   position: relative
-  height: 30%
+  height: 40%
 
 .help__text
   position: absolute
-  top: 20%
+  top: 5%
   left: 12%
-  font-family: Gilroy
+  font-family: Gilroy, serif
   font-size: 36px
   line-height: 46px
   letter-spacing: 0.05em
   color: #316099
 
 .help-card
-  width: 20%
-  text-align: center
-  border: 1px solid black
+  width: 24%
   background: #FFFFFF
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
   border-radius: 10px
 
 .help-card_first
   position: absolute
-  top: 60%
+  top: 30%
   left: 20%
 
 .help-card_second
   position: absolute
-  top: 30%
+  top: 5%
   right: 20%
 
+.help-card_third
+  position: absolute
+  bottom: 10%
+  right: 20%
+
+.help-card__wrapper
+  margin: 10% 15% 10% 15%
+
 .help-card__logo
+  margin: 0 0 15% 15%
+
+.help-card__logo_pos
+  margin-top: -22%
+
+.help-card__header
+  font-family: Gilroy, serif
+  font-size: 20px
+  line-height: 30px
+  letter-spacing: 0.05em
+  color: #1F3F68
+
+.help-card__text
+  font-family: Gilroy, serif
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.05em
+  color: #1F3F68
+  opacity: 0.6
+  margin: 0 -0 15% 0
+
+.help-card__link
+  font-family: Gilroy, serif
+  font-size: 14px
+  line-height: 30px
+  letter-spacing: 0.05em
+  color: #5A98D0
+
+.help-card__arrow
+  margin: 0 0 -1% 10%
