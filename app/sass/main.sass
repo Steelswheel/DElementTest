@@ -1,6 +1,8 @@
 $page-width: 1366px
 $page-height: 3871px
 
+@import 'fonts'
+
 .page
   padding: 0
   margin: 0 auto
@@ -23,7 +25,7 @@ $page-height: 3871px
 .text-card
 
 .text-card__header
-  font-family: Gilroy, serif
+  font-family: Gilroy, sans-serif
   font-size: 36px
   line-height: 46px
   letter-spacing: 0.05em
@@ -38,19 +40,22 @@ $page-height: 3871px
   line-height: 74px
   letter-spacing: 0.04em
 
+
 .text-card__text
-  font-family: Gilroy, serif
+  font-family: Gilroy, sans-serif
   font-size: 16px
   line-height: 26px
   letter-spacing: 0.05em
   margin-bottom: 12%
 
+.text-card__header_white
+  color: white
+
 .text-card__text_blue
   color: #1F3F68
-  opacity: 0.6
 
 .text-card__text_white
-  opacity: 0.6
+  color: rgba(255, 255, 255, 0.6)
 
 .header__text-card
   width: 100%
@@ -150,7 +155,8 @@ $page-height: 3871px
   background: #5A98D0
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
   border-radius: 10px
-  font-family: Gilroy, serif
+  border: 0
+  font-family: Gilroy, sans-serif
   font-size: 16px
   line-height: 26px
   text-align: center
@@ -165,9 +171,9 @@ $page-height: 3871px
 
 .help__text
   position: absolute
-  top: 5%
+  top: 9%
   left: 20%
-  font-family: Gilroy, serif
+  font-family: Gilroy, sans-serif
   font-size: 36px
   line-height: 46px
   letter-spacing: 0.05em
@@ -204,14 +210,14 @@ $page-height: 3871px
   margin-top: -22%
 
 .help-card__header
-  font-family: Gilroy, serif
+  font-family: Gilroy, sans-serif
   font-size: 20px
   line-height: 30px
   letter-spacing: 0.05em
   color: #1F3F68
 
 .help-card__text
-  font-family: Gilroy, serif
+  font-family: Gilroy, sans-serif
   font-size: 16px
   line-height: 26px
   letter-spacing: 0.05em
@@ -220,7 +226,7 @@ $page-height: 3871px
   margin: 0 -0 15% 0
 
 .help-card__link
-  font-family: Gilroy, serif
+  font-family: Gilroy, sans-serif
   font-size: 14px
   line-height: 30px
   letter-spacing: 0.05em
@@ -248,7 +254,8 @@ $page-height: 3871px
 .client-table__table
   margin-left: 10%
   width: 70%
-  border: 2px solid white
+  border: 2px solid #5A98D0
+  color: white
 
 .table
   border-collapse: collapse
@@ -257,29 +264,37 @@ $page-height: 3871px
   text-align: center
 
 .client-table__cell
+  font-family: Gilroy, sans-serif
+  font-size: 20px
+  line-height: 46px
+  letter-spacing: 0.02em
   padding: 4%
-  border: 1px solid black
+  border: 1px solid white
 
 .client-table__cell:hover
   cursor: pointer
-  background-color: #1F3F68
+  background-color: rgba(31, 63, 104, 0.2)
 
 .page__work
   display: flex
   justify-content: space-between
-  margin: 15% 20% 5% 20%
+  margin: 0 20% 5% 20%
 
 .work__text-card
   width: 60%
 
+.work__button
+  margin-top: 9%
+
 .footer
+  color: white
 
 .page__footer
-  margin-bottom: 5%
+  padding-bottom: 3%
   position: relative
 
 .footer__link
-  font-family: Gilroy
+  font-family: Gilroy, sans-serif
   font-size: 28px
   line-height: 46px
   letter-spacing: 0.02em
@@ -293,9 +308,13 @@ $page-height: 3871px
 .line
   margin-left: 0
   width: 80%
+  border: 0
+  height: 1px
+  background-color: rgba(255, 255, 255, 0.4)
 
 .footer__wrapper
-  display: flex
+  width: 60%
+  display: inline-flex
   margin: 5% 20% 0 20%
 
 .ul
@@ -303,28 +322,67 @@ $page-height: 3871px
   padding: 0
 
 .li
-  padding-top: 20%
+  margin-top: 5%
   list-style-type: none
 
 .table__cell_mod
   text-align: left
-  padding: 5%
+  padding: 3%
 
 .footer__table
-  width: 90%
+  font-family: Gilroy, sans-serif
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.05em
   margin-bottom: 10%
 
 .footer__about
-  margin-left: 10%
-  margin-bottom: 10%
-
-.footer__follow
+  height: 100%
+  width: 100%
   margin-left: 15%
   margin-bottom: 10%
+  font-family: Gilroy, sans-serif
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.05em
+
+.footer__follow
+  width: 100%
+  height: 100%
+  margin-bottom: 10%
+  font-family: Gilroy, sans-serif
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.05em
 
 .copyright
+  font-family: Gilroy, sans-serif
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.05em
+  color: rgba(255, 255, 255, 0.4)
 
 .footer__copyright
   position: absolute
-  bottom: 0
+  bottom: 15%
   left: 20%
+
+.link_mod
+  font-family: Gilroy, sans-serif
+  font-size: 20px
+  line-height: 30px
+  letter-spacing: 0.05em
+
+.link_white
+  color: white
+
+.background-blue
+  background-color: #5A98D0
+  border-radius: 200px 0px 0px 0px
+  padding-top: 5%
+
+.background-dark-blue
+  background-color: #316099
+  border-radius: 0px 200px 0px 0px
+  margin-right: 5%
+  padding-top: 5%
