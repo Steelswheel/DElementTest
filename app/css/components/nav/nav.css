@@ -1,0 +1,60 @@
+.nav {
+  width: 48px;
+  background-color: white;
+  color: white;
+  text-align: center;
+  height: 48px; }
+
+.nav__checkbox {
+  display: none; }
+
+.nav__label {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 40px; }
+
+.nav__burger-line {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: #356EAD;
+  -webkit-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all; }
+
+.nav__burger-line_second {
+  top: 18px; }
+
+.nav__burger-line_third {
+  top: 18px; }
+
+.nav__burger-line_fourth {
+  top: 28px; }
+
+.nav__checkbox:checked ~ .nav__main-menu {
+  max-height: 500px;
+  font-size: 16px; }
+
+.nav__checkbox:checked ~ .nav__burger-line_first {
+  display: none; }
+
+.nav__checkbox:checked ~ .nav__burger-line_second {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.nav__checkbox:checked ~ .nav__burger-line_third {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.nav__checkbox:checked ~ .nav__burger-line_fourth {
+  display: none; }

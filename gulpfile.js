@@ -19,12 +19,29 @@ gulp.task('sass', function() { // Создаем таск Sass
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
-gulp.task('min-css', function () {
-  return gulp.src('app/css/*.css') // Берем источник
+gulp.task('components-css', function() { // Создаем таск Sass
+    return gulp.src('app/sass/components/**/*.sass') // Берем источник
+        .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+        .pipe(gulp.dest('app/css/components')) // Выгружаем результата в папку app/css
+        .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
+
+gulp.task('min-main-css', function () {
+  return gulp.src('app/css/main.css') // Берем источник
       .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
       .pipe(cssnano()) // Сжимаем
       .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
       .pipe(gulp.dest('app/css/min')) // Выгружаем результата в папку app/css
+      .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
+
+gulp.task('min-components', function () {
+  return gulp.src('app/css/components/**/*.css') // Берем источник
+      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+      .pipe(cssnano()) // Сжимаем
+      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+      .pipe(gulp.dest('app/css/min/components')) // Выгружаем результата в папку app/css
       .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
@@ -90,9 +107,9 @@ gulp.task('clear', function (callback) {
 })
 
 gulp.task('watch', function() {
-    gulp.watch('app/sass/**/*.sass', gulp.parallel('sass')); // Наблюдение за sass файлами
+    gulp.watch('app/sass/**/*.sass', gulp.parallel('sass', 'components-css')); // Наблюдение за sass файлами
     gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
     gulp.watch(['app/js/*.js'], gulp.parallel('scripts')); // Наблюдение за JS файлами
 });
-gulp.task('default', gulp.parallel('sass', 'scripts', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('min-css', 'prebuild', 'clean', 'img', 'sass', 'scripts'));
+gulp.task('default', gulp.parallel('sass', 'components-css', 'scripts', 'browser-sync', 'watch'));
+gulp.task('build', gulp.parallel('min-main-css', 'min-components', 'prebuild', 'clean', 'img', 'sass', 'scripts'));
