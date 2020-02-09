@@ -2,28 +2,38 @@
   font-family: Gilroy, sans-serif;
   font-size: 16px;
   line-height: 26px;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  width: 100%; }
 
 .text-card__header {
   font-family: Gilroy, sans-serif;
   font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
-  margin: 0 0 10% 0;
   width: 100%; }
 
-.text-card__header_blue {
-  color: #1F3F68;
-  font-family: Galien, serif;
-  font-size: 64px;
+.text-card__header_contacts {
+  margin: 10% 0 15% 0;
+  font-family: Gilroy, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68; }
+
+.text-card__text_contacts {
+  display: inline-block;
+  vertical-align: middle; }
+
+.text-card__header_mod {
+  font-family: Gilroy;
+  font-size: 44px;
   line-height: 74px;
-  letter-spacing: 0.04em; }
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  margin: 0 0 2% 0; }
 
 .text-card__header_white {
   color: white; }
-
-.text-card__text {
-  margin-bottom: 12%; }
 
 .text-card__text_blue {
   color: #1F3F68; }
@@ -32,4 +42,9 @@
   color: rgba(255, 255, 255, 0.6); }
 
 .text-card__text_mod {
-  width: 65%; }
+  width: 60%;
+  margin: 0 auto;
+  font-family: Gilroy;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em; }

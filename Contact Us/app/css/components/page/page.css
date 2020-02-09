@@ -1,37 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .page {
   padding: 0;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-width: 1366px;
-  height: 3871px; }
+          box-sizing: border-box; }
 
 .page__header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.page__help {
-  position: relative; }
-
-.page__client {
-  margin-top: 5%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.page__client-table {
-  margin-bottom: 10%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,7 +27,7 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 20% 5% 20%; }
+  margin: 0 20% 5% 15%; }
 
 .page__footer {
   padding-bottom: 3%;

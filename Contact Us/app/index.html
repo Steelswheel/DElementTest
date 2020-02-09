@@ -8,6 +8,7 @@
 </head>
 
 <body class="page">
+
   <header class="header page__header">
     <a class="link" href="#"><img class="logo header__logo" src="img/main-logo.svg" alt="logo"></a>
 
@@ -23,77 +24,75 @@
     </div>
 
     <div class="text-card header__text-card">
-      <h1 class="text-card__header text-card__header_blue">New Automation<br> Tool for Your Home</h1>
-      <p class="text-card__text text-card__text_mod text-card__text_blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat asperiores omnis ea quae nesciunt. Ad libero reprehenderit, molestias earum quas cum?</p>
-      <button type="button" name="button" class="button">See Our Project</button>
+      <h1 class="text-card__header text-card__header_mod text-card__header_white"><strong>Contact Us</strong></h1>
+      <p class="text-card__text text-card__text_white text-card__text_mod">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat asperiores omnis ea quae nesciunt. Ad libero reprehenderit, molestias earum quas cum?</p>
     </div>
-    <img src="img/header-image.svg" class="header__image"></div>
 
   </header>
 
-  <section class="help page__help">
+  <section class="info">
 
-    <h2 class="help__text">What we do to help<br> our client grow in<br> digital era,</h2>
-
-    <div class="help-card help-card_first">
-      <div class="help-card__wrapper">
-        <img class="help-card__logo" src="img/card-1.svg" alt="">
-        <h2 class="help-card__header"><strong>Make Your bussiness To Be<br> Better Famous In Internet</strong></h2>
-        <p class="help-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ea assumenda veniam deserunt totam enim cupiditate qui error impedit.</p>
-        <a href="#" class="link help-card__link"><strong>Learn more</strong> <img class="help-card__arrow" src="img/link-arrow.svg" alt=""></a>
-      </div>
+    <div class="contacts info__contacts">
+      <img class="contacts__logo" src="img/contact-img.svg" alt="Contact Us">
+        <div class="text-card contacts__text-card">
+          <h2 class="text-card__header text-card__header_contacts"><strong>ADDRESS</strong></h2>
+          <p class="text-card__text">Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</p>
+        </div>
+        <div class="text-card contacts__text-card">
+          <h2 class="text-card__header text-card__header_contacts"><strong>PHONE</strong></h2>
+          <img class="phone-ico contacts__phone-ico" src="img/phone-ico.svg" alt=""><p class="text-card__text text-card__text_contacts">+62-812-7313-4321</p>
+          <p class="text-card__text"><img class="phone-ico contacts__phone-ico" src="img/phone-ico.svg" alt="">+62-817-000-1234</p>
+        </div>
+        <div class="text-card contacts__text-card">
+          <h2 class="text-card__header text-card__header_contacts"><strong>ONLINE SERVICE</strong></h2>
+          <img class="world-ico contacts__world-ico" src="img/world-ico.svg" alt=""><p class="text-card__text text-card__text_contacts">+62-812-7313-4321</p>
+        </div>
+        <div class="text-card contacts__text-card">
+          <img class="mail-ico contacts__mail-ico" src="img/mail-ico.svg" alt=""><p class="text-card__text text-card__text_contacts">+62-817-000-1234</p>
+        </div>
     </div>
 
-    <div class="help-card help-card_second">
-      <div class="help-card__wrapper">
-        <img class="help-card__logo help-card__logo_pos" src="img/card-2.svg" alt="">
-        <h2 class="help-card__header">Bring Technology To Your<br> Comfortable Home</h2>
-        <p class="help-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ea assumenda veniam deserunt totam enim cupiditate qui error impedit.</p>
-        <a href="#" class="link help-card__link"><strong>Learn more</strong> <img class="help-card__arrow" src="img/link-arrow.svg" alt=""></a>
-      </div>
-    </div>
+    <form class="form info__form">
 
-    <div class="help-card help-card_third">
-      <div class="help-card__wrapper">
-        <img class="help-card__logo" src="img/card-3.svg" alt="">
-        <h2 class="help-card__header">Build Your Digital Product That Suitable For Your Need</h2>
-        <p class="help-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ea assumenda veniam deserunt totam enim cupiditate qui error impedit.</p>
-        <a href="#" class="link help-card__link"><strong>Learn more</strong> <img class="help-card__arrow" src="img/link-arrow.svg" alt=""></a>
-      </div>
-    </div>
+      <fieldset class="form__fieldset form__fieldset_name">
+        <h2 class="form__header"><strong>SEND US MESSAGE</strong></h2>
 
+        <div class="form__wrapper">
+          <label for="name" class="form__label form__label_name">Full Name</label>
+        </div>
+        <div class="form__wrapper">
+          <input type="text" class="form__input form__input_name"
+        id="name" placeholder="Your Name">
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset form__fieldset_email">
+        <div class="form__wrapper">
+          <label for="email" class="form__label form__label_email">Email</label>
+        </div>
+        <div class="form__wrapper">
+          <input type="text" class="form__input form__input_name" id="email" placeholder="Your Email">
+        </div>
+      </fieldset>
+
+      <fieldset class="form__fieldset form__fieldset_message">
+        <div class="form__wrapper">
+          <label for="message" class="form__label form__label_message">Message</label>
+        </div>
+        <div class="form__wrapper">
+          <textarea class="form__textarea" id="message" placeholder="Your Message"></textarea>
+        </div>
+      </fieldset>
+
+
+      <div class="form__wrapper form__wrapper_button"><button type="submit" name="button" class="button form__button">SUBMIT</button></div>
+
+    </form>
   </section>
 
-  <div class="background-blue background-blue_mod">
-
-    <section class="client page__client">
-
-      <div class="text-card client__text-card">
-        <h2 class="text-card__header text-card__header_white">Our Beloved<br> Client</h2>
-        <span class="text-card__text text-card__text_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis debitis quaerat ea placeat sapiente odio dolor libero cum inventore aspernatur eius, quidem consequatur mollitia
-          ratione quos nostrum quo, et dolorum consequuntur quisquam labore non natus! Vitae ratione ipsa totam quia.</span>
-      </div>
-
-    </section>
-
-    <section class="client-table page__client-table">
-
-      <table class="table client-table__table">
-        <tr class="table__row client-table__row">
-          <td class="table__cell client-table__cell"><strong>LOGO CLIENT 1</strong></td>
-          <td class="table__cell client-table__cell"><strong>LOGO CLIENT 2</strong></td>
-          <td class="table__cell client-table__cell"><strong>LOGO CLIENT 3</strong></td>
-          <td class="table__cell client-table__cell"><strong>LOGO CLIENT 4</strong></td>
-        </tr>
-        <tr class="table__row client-table__row">
-          <td class="table__cell client-table__cell"><strong>LOGO CLIENT 5</strong></td>
-          <td class="table__cell client-table__cell"><strong>LOGO CLIENT 6</strong></td>
-          <td class="table__cell client-table__cell"><strong>LOGO CLIENT 7</strong></td>
-          <td class="table__cell client-table__cell client-table__cell_last-child"><strong>More Client</strong></td>
-        </tr>
-      </table>
-
-    </section>
+  <section class="map">
+    <iframe class="map__frame" class=""src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1139.6270331920498!2d61.373921972065!3d55.161330985006735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c592c7f5678411%3A0xbca9aff603f58a3e!2z0YPQuy4g0K3QvdGC0YPQt9C40LDRgdGC0L7QsiwgMiwg0KfQtdC70Y_QsdC40L3RgdC6LCDQp9C10LvRj9Cx0LjQvdGB0LrQsNGPINC-0LHQuy4sIDQ1NDA4MA!5e0!3m2!1sru!2sru!4v1581236711166!5m2!1sru!2sru" frameborder="0" allowfullscreen=""></iframe>
+  </section>
 
     <div class="background-blue background-blue_mod background-blue_dark">
       <section class="work page__work">
@@ -148,7 +147,6 @@
         <div class="copyright footer__copyright">2019 © Afrianska. All rights reserved.</div>
       </footer>
     </div>
-  </div>
 </body>
 
 </html>

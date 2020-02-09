@@ -71,7 +71,7 @@
   margin-left: 5%; }
 
 .footer__wrapper {
-  width: 60%;
+  width: 70%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -286,12 +286,13 @@
 .nav__checkbox:checked ~ .nav__burger-line_fourth {
   display: none; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 .page {
   padding: 0;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  min-width: 1366px;
   height: 3871px; }
 
 .page__header {

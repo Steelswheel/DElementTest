@@ -1,16 +1,24 @@
 .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #98C3E8), color-stop(30.12%, rgba(152, 195, 232, 0)));
   background: -o-linear-gradient(bottom, #98C3E8 1%, rgba(152, 195, 232, 0) 30.12%);
   background: linear-gradient(0deg, #98C3E8 1%, rgba(152, 195, 232, 0) 30.12%); }
 
 .header__text-card {
   width: 100%;
-  margin: 15% 0 5% 20%; }
-
-.header__image {
-  max-width: 100%;
-  margin: 10% 10% 5% 0;
-  overflow: visible; }
+  margin-top: 10%;
+  padding: 5%;
+  text-align: center;
+  background-image: url(../img/contact-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .header__nav {
   position: absolute;
