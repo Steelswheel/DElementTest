@@ -3,7 +3,6 @@ const gulp       = require('gulp'), // Подключаем Gulp
       browserSync  = require('browser-sync'), // Подключаем Browser Sync
       concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
       uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
-      cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
       rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
       del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
       imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
@@ -25,24 +24,6 @@ gulp.task('components-css', function() { // Создаем таск Sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css/components')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
-});
-
-gulp.task('min-main-css', function () {
-  return gulp.src('app/css/main.css') // Берем источник
-      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-      .pipe(cssnano()) // Сжимаем
-      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-      .pipe(gulp.dest('app/css/min')) // Выгружаем результата в папку app/css
-      .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
-});
-
-gulp.task('min-components', function () {
-  return gulp.src('app/css/components/**/*.css') // Берем источник
-      .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-      .pipe(cssnano()) // Сжимаем
-      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-      .pipe(gulp.dest('app/css/min/components')) // Выгружаем результата в папку app/css
-      .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
@@ -112,4 +93,4 @@ gulp.task('watch', function() {
     gulp.watch(['app/js/*.js'], gulp.parallel('scripts')); // Наблюдение за JS файлами
 });
 gulp.task('default', gulp.parallel('sass', 'components-css', 'scripts', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('min-main-css', 'min-components', 'prebuild', 'clean', 'img', 'sass', 'scripts'));
+gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass', 'scripts'));

@@ -398,6 +398,7 @@
   width: 30%; }
 
 .contacts__logo {
+  width: 100%;
   display: inline-block;
   margin-bottom: 15%; }
 
