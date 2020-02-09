@@ -2,7 +2,6 @@ const gulp       = require('gulp'), // Подключаем Gulp
       sass         = require('gulp-sass'), //Подключаем Sass пакет,
       browserSync  = require('browser-sync'), // Подключаем Browser Sync
       concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
-      uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
       rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
       del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
       imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
@@ -33,15 +32,6 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
         },
         notify: false // Отключаем уведомления
     });
-});
-
-gulp.task('scripts', function() {
-    return gulp.src([ // Берем все js-файлы
-        'app/js/*.js',
-        ])
-        .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле
-        .pipe(uglify()) // Сжимаем JS файл
-        .pipe(gulp.dest('app/js')); // Выгружаем в папку app/js
 });
 
 gulp.task('code', function() {
@@ -91,7 +81,6 @@ gulp.task('clear', function (callback) {
 gulp.task('watch', function() {
     gulp.watch('app/sass/**/*.sass', gulp.parallel('sass', 'components-css')); // Наблюдение за sass файлами
     gulp.watch('app/*.html', gulp.parallel('code')); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch(['app/js/*.js'], gulp.parallel('scripts')); // Наблюдение за JS файлами
 });
-gulp.task('default', gulp.parallel('sass', 'components-css', 'scripts', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass', 'scripts'));
+gulp.task('default', gulp.parallel('sass', 'components-css', 'browser-sync', 'watch'));
+gulp.task('build', gulp.parallel('prebuild', 'clean', 'img', 'sass'));
