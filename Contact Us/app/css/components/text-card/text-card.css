@@ -12,8 +12,8 @@
   letter-spacing: 0.05em;
   width: 100%; }
 
-.text-card__header_contacts {
-  margin: 10% 0 15% 0;
+.text-card__header_contacts-theme {
+  margin: 10% 0 5% 0;
   font-family: Gilroy, sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -24,7 +24,7 @@
   display: inline-block;
   vertical-align: middle; }
 
-.text-card__header_mod {
+.text-card__header_theme {
   font-family: Gilroy;
   font-size: 44px;
   line-height: 74px;

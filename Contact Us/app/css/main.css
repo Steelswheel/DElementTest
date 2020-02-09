@@ -20,34 +20,6 @@
   color: #FFFFFF;
   cursor: pointer; }
 
-.client__text-card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 60%; }
-
-.client-table__table {
-  margin-left: 10%;
-  width: 70%;
-  border: 2px solid #5A98D0;
-  color: white; }
-
-.client-table__cell {
-  font-family: Gilroy, sans-serif;
-  font-size: 20px;
-  line-height: 46px;
-  letter-spacing: 0.02em;
-  padding: 4%;
-  border: 1px solid white; }
-
-.client-table__cell:hover {
-  cursor: pointer;
-  background-color: rgba(31, 63, 104, 0.2); }
-
-.client-table__cell_last-child {
-  background-color: rgba(31, 63, 104, 0.2); }
-
 .copyright {
   font-family: Gilroy, sans-serif;
   font-size: 16px;
@@ -88,7 +60,7 @@
 .footer__about {
   height: 100%;
   width: 100%;
-  margin-left: 15%;
+  margin-left: 20%;
   margin-bottom: 10%;
   font-family: Gilroy, sans-serif;
   font-size: 16px;
@@ -140,75 +112,6 @@
   position: absolute;
   left: 5%;
   top: 6%; }
-
-.help {
-  height: 40%; }
-
-.help__text {
-  position: absolute;
-  top: 9%;
-  left: 20%;
-  font-family: Gilroy, sans-serif;
-  font-size: 36px;
-  line-height: 46px;
-  letter-spacing: 0.05em;
-  color: #316099; }
-
-.help-card {
-  width: 24%;
-  background: #FFFFFF;
-  -webkit-box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-          box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-  border-radius: 10px; }
-
-.help-card_first {
-  position: absolute;
-  top: 30%;
-  left: 27%; }
-
-.help-card_second {
-  position: absolute;
-  top: 11%;
-  right: 20%; }
-
-.help-card_third {
-  position: absolute;
-  bottom: 11%;
-  right: 20%; }
-
-.help-card__wrapper {
-  margin: 10% 15% 10% 15%; }
-
-.help-card__logo {
-  margin: 0 0 15% 15%; }
-
-.help-card__logo_pos {
-  margin-top: -22%; }
-
-.help-card__header {
-  font-family: Gilroy, sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #1F3F68; }
-
-.help-card__text {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
-  color: #1f3f68;
-  margin: 0 -0 15% 0; }
-
-.help-card__link {
-  font-family: Gilroy, sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #5A98D0; }
-
-.help-card__arrow {
-  margin: 0 0 -1% 10%; }
 
 .line {
   margin-left: 0;
@@ -353,8 +256,8 @@
   letter-spacing: 0.05em;
   width: 100%; }
 
-.text-card__header_contacts {
-  margin: 10% 0 15% 0;
+.text-card__header_contacts-theme {
+  margin: 10% 0 5% 0;
   font-family: Gilroy, sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -365,7 +268,7 @@
   display: inline-block;
   vertical-align: middle; }
 
-.text-card__header_mod {
+.text-card__header_theme {
   font-family: Gilroy;
   font-size: 44px;
   line-height: 74px;

@@ -19,7 +19,7 @@
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 5% 20% 0 20%; }
+  margin: 5% 10% 0 15%; }
 
 .footer__table {
   font-family: Gilroy, sans-serif;
@@ -31,7 +31,7 @@
 .footer__about {
   height: 100%;
   width: 100%;
-  margin-left: 15%;
+  margin-left: 20%;
   margin-bottom: 10%;
   font-family: Gilroy, sans-serif;
   font-size: 16px;
@@ -50,4 +50,4 @@
 .footer__copyright {
   position: absolute;
   bottom: 15%;
-  left: 20%; }
+  left: 15%; }

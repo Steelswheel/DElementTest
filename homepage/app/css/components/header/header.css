@@ -5,12 +5,14 @@
 
 .header__text-card {
   width: 100%;
-  margin: 15% 0 5% 20%; }
+  margin: 15% 0 5% 15%; }
+
+.header__image-wrapper {
+  width: 100%;
+  margin: 10% 5% 5% 0; }
 
 .header__image {
-  max-width: 100%;
-  margin: 10% 10% 5% 0;
-  overflow: visible; }
+  width: 100%; }
 
 .header__nav {
   position: absolute;

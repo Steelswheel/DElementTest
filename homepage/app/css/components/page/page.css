@@ -12,13 +12,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
 
 .page__help {
-  position: relative; }
+  position: relative;
+  margin: 10% 0 10% 0; }
 
 .page__client {
   margin-top: 5%;
@@ -51,7 +51,7 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 20% 5% 20%; }
+  margin: 0 20% 5% 15%; }
 
 .page__footer {
   padding-bottom: 3%;
