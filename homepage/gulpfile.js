@@ -67,14 +67,10 @@ gulp.task('img', function() {
 
 gulp.task('prebuild', async function() {
 
-    let buildCss = gulp.src([ // Переносим css в продакшен
-        'app/css/main.css'
-        ])
+    let buildCss = gulp.src('app/css/main.css')
     .pipe(gulp.dest('dist/css'))
 
-    let buildComponents = gulp.src([
-      'app/css/components/*'
-    ])
+    let buildComponents = gulp.src('app/css/components/**/*')
     .pipe(gulp.dest('dist/css/components'))
 
     let buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен

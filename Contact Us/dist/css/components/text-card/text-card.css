@@ -1,0 +1,50 @@
+.text-card {
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  width: 100%; }
+
+.text-card__header {
+  font-family: Gilroy, sans-serif;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  width: 100%; }
+
+.text-card__header_contacts-theme {
+  margin: 10% 0 5% 0;
+  font-family: Gilroy, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68; }
+
+.text-card__text_contacts {
+  display: inline-block;
+  vertical-align: middle; }
+
+.text-card__header_theme {
+  font-family: Gilroy;
+  font-size: 44px;
+  line-height: 74px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  margin: 0 0 2% 0; }
+
+.text-card__header_white {
+  color: white; }
+
+.text-card__text_blue {
+  color: #1F3F68; }
+
+.text-card__text_white {
+  color: rgba(255, 255, 255, 0.6); }
+
+.text-card__text_mod {
+  width: 60%;
+  margin: 0 auto;
+  font-family: Gilroy;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em; }

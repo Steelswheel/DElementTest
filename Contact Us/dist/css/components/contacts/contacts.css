@@ -1,0 +1,23 @@
+.contacts {
+  padding: 5%;
+  width: 30%; }
+
+.contacts__logo {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 15%; }
+
+.contacts__phone-ico {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%; }
+
+.contacts__world-ico {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%; }
+
+.contacts__mail-ico {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%; }

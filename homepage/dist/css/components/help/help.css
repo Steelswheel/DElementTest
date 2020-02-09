@@ -1,0 +1,12 @@
+.help {
+  height: 40%; }
+
+.help__text {
+  position: absolute;
+  top: 9%;
+  left: 15%;
+  font-family: Gilroy, sans-serif;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #316099; }

@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none; }
+
+.link_theme {
+  font-family: Gilroy, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em; }
+
+.link_white {
+  color: white; }
