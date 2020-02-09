@@ -1,0 +1,29 @@
+.popup {
+  display: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  background: #FFFFFF;
+  -webkit-box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+          box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  padding: 2%; }
+
+.popup__header {
+  font-family: Gilroy, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68; }
+
+.popup__close {
+  font-family: Gilroy, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: black;
+  float: right; }
+
+.popup__close {
+  cursor: pointer; }

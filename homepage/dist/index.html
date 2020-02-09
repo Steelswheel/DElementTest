@@ -108,6 +108,11 @@
 
       <section class="modal">
 
+        <div class="popup modal__popup">
+          <span class="popup__close">X</span>
+          <h2 class="popup__header">Форма успешно отправлена!</h2>
+        </div>
+
         <form class="modal__form form">
 
           <fieldset class="form__fieldset form__fieldset_name">
@@ -117,7 +122,7 @@
               <label for="name" class="form__label form__label_name">Full Name</label>
             </div>
             <div class="form__wrapper">
-              <input type="text" class="form__input form__input_name"
+              <input type="text" class="form__input form__input_name field"
             id="name" placeholder="Your Name">
             </div>
           </fieldset>
@@ -127,7 +132,7 @@
               <label for="email" class="form__label form__label_email">Email</label>
             </div>
             <div class="form__wrapper">
-              <input type="text" class="form__input form__input_name" id="email" placeholder="Your Email">
+              <input type="text" class="form__input form__input_email field" id="email" placeholder="Your Email">
             </div>
           </fieldset>
 
@@ -136,7 +141,7 @@
               <label for="message" class="form__label form__label_message">Message</label>
             </div>
             <div class="form__wrapper">
-              <textarea class="form__textarea" id="message" placeholder="Your Message"></textarea>
+              <textarea class="form__textarea field" id="message" placeholder="Your Message"></textarea>
             </div>
           </fieldset>
 
@@ -144,6 +149,7 @@
           <div class="form__wrapper form__wrapper_button"><button type="submit" name="button" class="button form__button">SUBMIT</button></div>
 
         </form>
+
       </section>
 
       <hr class="line">
@@ -191,7 +197,7 @@
     </div>
   </div>
 
-  <script src="js/common.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -47,6 +47,9 @@
   text-align: center; }
 
 .form__button {
+  position: absolute;
+  bottom: 3%;
+  left: 10%;
   height: 70px;
-  width: 95%;
+  width: 80%;
   font-weight: bolder; }
